@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vysakh S – Web Developer Portfolio</title>
+<style>
+:root {
+  --primary: #04c75f;
+  --bg: #0b0c10;
+  --card-bg: #1f2833;
+  --text: #fff;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 10px var(--shadow);
+  animation: fadeInDown 1s ease-out;
+}
+header h1 {
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+header p {
+  font-size: 1.1rem;
+}
+nav {
+  margin-top: 1rem;
+}
+nav a {
+  color: var(--primary);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #fff;
+}
+section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  animation: fadeInLeft 1s ease;
+}
+.card {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--shadow);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+a {
+  color: var(--primary);
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInLeft {
+  from {opacity: 0; transform: translateX(-20px);}
+  to {opacity: 1; transform: translateX(0);}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Vysakh S</h1>
+  <p>Web Developer | Laravel & API </p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p>Results-driven web developer with 2.4 years of experience crafting scalable, user-centric web applications and APIs. Passionate about tackling complex technical challenges and delivering impactful results.</p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Web Developer – Vandalay Business Solutions</h3>
+    <p><em>Mar 2023 – Present</em></p>
+    <ul>
+      <li>Specialized in front-end and back-end development using Angular and Laravel.</li>
+      <li>Built efficient, reusable code and implemented backup strategies.</li>
+      <li>Designed responsive interfaces for desktop, tablet, and mobile.</li>
+      <li>Conducted usability testing and bug fixes for improved UX.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <h3 style="color:var(--primary)">Office Projects</h3>
+  <div class="card">
+    <h4>CRM System</h4>
+    <p>Laravel-based CRM with API integration, advanced authorization, and PDF/Excel report generation.</p>
+  </div>
+  <div class="card">
+    <h4>PDF Generation Service</h4>
+    <p>Secure Laravel API endpoint for dynamic PDF creation using mPDF and Dompdf libraries.</p>
+  </div>
+  <div class="card">
+    <h4>Angular Digital Marketing Management</h4>
+    <p>Angular + Laravel project managing multi-platform marketing data with Material UI integration.</p>
+  </div>
+  <div class="card">
+    <h4>ETL Project</h4>
+    <p>Laravel backend managing cron jobs, pulling data from Google, Facebook, and Taboola for analytics.</p>
+  </div>
+  <div class="card">
+    <h4>Email Validation API</h4>
+    <p>High-performance Lumen API for email validation with syntax, domain, and disposable checks.</p>
+  </div>
+
+  <h3 style="color:var(--primary)">Personal Projects</h3>
+  <div class="card">
+    <h4>Cinema Talkies – React App</h4>
+    <p>Movie listing app built with React.js, responsive UI, and deployed on GitHub Pages.</p>
+    <p><a href="https://vysakhsudharsan.github.io/cinima_talkies/" target="_blank">Live Demo</a> | <a href="https://github.com/vysakhsudharsan/cinima_talkies" target="_blank">GitHub Repo</a></p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card"><strong>Languages:</strong> PHP, JavaScript, Python</div>
+    <div class="card"><strong>Frameworks:</strong> Laravel, Angular, React, FastAPI</div>
+    <div class="card"><strong>Databases:</strong> MySQL, PostgreSQL,Redshift, Redis</div>
+    <div class="card"><strong>Tools:</strong> Git, GitHub, Sentry, Postman, Linux</div>
+    <div class="card"><strong>Frontend:</strong> HTML5, CSS3, jQuery, AJAX, Bootstrap</div>
+    <div class="card"><strong>Soft Skills:</strong> Problem-solving, Critical thinking, Teamwork</div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card">Basic Web Development – DevTown</div>
+    <div class="card">Python with Django – NOSCE</div>
+    <div class="card">Python & Cloud Security – Shapai</div>
+    <div class="card">Apple Siri Voice Recognition – TechLearn</div>
+    <div class="card">Python with Django – Shiash</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:vysakhsudharsan@gmail.com">vysakhsudharsan@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vysakhsudharsan" target="_blank">linkedin.com/in/vysakhsudharsan</a></p>
+    <p>GitHub: <a href="https://github.com/vysakhsudharsan" target="_blank">github.com/vysakhsudharsan</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Vysakh S. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
